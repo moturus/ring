@@ -243,6 +243,7 @@ const LINUX_ABI: &[&str] = &[
     "haiku",
     "hurd",
     "illumos",
+    "moturus",
     "netbsd",
     "openbsd",
     "linux",
@@ -573,7 +574,7 @@ fn configure_cc(c: &mut cc::Build, target: &Target, c_root_dir: &Path, include_d
     }
 
     // Allow cross-compiling without a target sysroot for these targets.
-    if (target.arch == WASM32)
+    if (target.arch == WASM32) || (target.os == "moturus")
         || (target.os == "linux" && target.env == "musl" && target.arch != X86_64)
     {
         // TODO: Expand this to non-clang compilers in 0.17.0 if practical.

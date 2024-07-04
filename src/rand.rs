@@ -133,6 +133,7 @@ impl crate::sealed::Sealed for SystemRandom {}
     target_os = "hurd",
     target_os = "illumos",
     target_os = "linux",
+    target_os = "moturus",
     target_os = "netbsd",
     target_os = "openbsd",
     target_os = "redox",
