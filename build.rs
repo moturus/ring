@@ -249,6 +249,7 @@ const LINUX_ABI: &[&str] = &[
     "haiku",
     "hurd",
     "illumos",
+    "motor",
     "netbsd",
     "openbsd",
     "linux",

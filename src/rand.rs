@@ -135,6 +135,7 @@ impl crate::sealed::Sealed for SystemRandom {}
     target_os = "horizon",
     target_os = "illumos",
     target_os = "linux",
+    target_os = "motor",
     target_os = "netbsd",
     target_os = "openbsd",
     target_os = "redox",
